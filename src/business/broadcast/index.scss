@@ -1,0 +1,72 @@
+.broadcast{
+    text-align:center;
+    overflow: hidden;
+    width: 450px;
+}
+.prizeBroadcast{
+    height: 60px;
+   
+    margin-top: 20px;
+    ul {
+        float: left;
+        li {
+            font-size:16px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:pink;
+            list-style: none;
+            width: 300px;
+            line-height: 60px;
+            float: left;
+        }
+        span{
+            color: green;
+        }
+    }
+
+    .move{
+        animation-name: move;
+        animation-duration: 40s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+        @keyframes move {
+            0% {
+                transform: translateX(0);
+                -webkit-transform: translateX(0);
+                }
+
+            100% {
+                transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+            }
+        }
+    }
+
+    
+}
+.listContanier{
+    width: 570px;
+    height: 120px;
+}
+.noList{
+    color: #ffffff;
+    line-height: 120px;
+    margin-left: 60px;
+}
+.contanier{
+    display: flex;
+    justify-content: flex-start;
+    width: 450px;
+    min-height: 100px;
+    background-color: #fff;
+}
+.code{
+    background-color: #fff;
+    width: 700px;
+    height: 300px;
+    overflow: scroll;
+}
+.codeContanier{
+    margin-top: 30px;
+}

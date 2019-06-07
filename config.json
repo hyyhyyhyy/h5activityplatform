@@ -1,0 +1,50 @@
+{
+  "business": [
+    {
+      "name": "lottery",
+      "moduleNameChinese": "抽奖九宫格",
+      "descr": "抽奖活动，点击抽奖，产生转动效果",
+      "author": "hyy",
+      "className": "Lottery"
+    },
+    {
+      "name": "broadcast",
+      "moduleNameChinese": "广播通知",
+      "descr": "中奖信息以滚动形式呈现,展示动态效果",
+      "author": "hyy",
+      "className": "Broadcast"
+    },
+    {
+      "name": "recordList",
+      "moduleNameChinese": "记录展示",
+      "descr": "中奖或者邀请记录展示,0条记录提示'暂无记录',1~5条记录静态展示,5条以上上下滚动展示",
+      "author": "hyy",
+      "className": "Recordlist"
+    }
+  ],
+  "common": [
+    {
+      "name": "loading",
+      "moduleNameChinese": "加载旋转",
+      "descr": "在当前页面接口数据返回较慢时,加载动画,给用户良好体验",
+      "author": "hyy",
+      "className": "Loading"
+    },
+    {
+      "name": "loadingnewpage",
+      "moduleNameChinese": "中转页加载",
+      "descr": "在新开的页面加载等待,一般在该页面进行一些校验,通过则进入正常流程,否则失败处理",
+      "author": "hyy",
+      "className": "Loadingnewpage"
+    }
+  ],
+  "other": [
+    {
+      "name": "component1",
+      "moduleNameChinese": "11111",
+      "descr": "3333",
+      "author": "hyy",
+      "className": "444"
+    }
+  ]
+}
