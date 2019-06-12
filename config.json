@@ -38,13 +38,5 @@
       "className": "Loadingnewpage"
     }
   ],
-  "other": [
-    {
-      "name": "component1",
-      "moduleNameChinese": "11111",
-      "descr": "3333",
-      "author": "hyy",
-      "className": "444"
-    }
-  ]
+  "other": []
 }

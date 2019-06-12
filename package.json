@@ -2,7 +2,7 @@
   "name": "activityplatform",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/pindex.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
@@ -43,6 +43,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "antd": "^3.18.1",
     "react": "^16.8.3",
+    "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.8.3",
     "react-loadable": "^5.5.0",
     "react-markdown": "^4.0.6",
