@@ -1,13 +1,13 @@
-import Broadcast from './business/broadcast/index';
-import Lottery from './business/lottery/index';
-import Recordlist from './business/recordlist/index';
-import Loading from './common/loading/index';
-import Loadingnewpage from './common/Loadingnewpage/index';
+import Broadcast from './business/broadcast/index.jsx';
+import Lottery from './business/lottery/index.jsx';
+import RecordList from './business/recordList/index.jsx';
+import Loading from './common/loading/index.jsx';
+import Loadingnewpage from './common/loadingnewpage/index.jsx';
 
-export {
+export default {
     Broadcast,
     Lottery,
-    Recordlist,
+    RecordList,
     Loading,
     Loadingnewpage
 }

@@ -109,7 +109,7 @@ class Lottery extends React.Component {
     render() {
         const { imgArr } = this.state;
         return (
-            <div id='lottery'>
+            <div className='lottery'>
 
                 <section className='choujiangBg'>
                     <div className='tr'>
