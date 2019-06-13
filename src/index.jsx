@@ -26,7 +26,7 @@ class App extends React.Component {
 
     //跳转上传组件说明
     gotoUpload() {
-        window.location.href = `http://${location.host}/#/uploadComponent`
+        // window.location.href = `http://${location.host}/#/uploadComponent`
     }
 
     render() {

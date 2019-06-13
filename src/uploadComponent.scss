@@ -1,0 +1,36 @@
+.upcontanier{
+    padding-bottom: 10px;
+    .h3{
+        font-size: 18px;
+    }
+    .h4{
+        margin-top: 10px;
+        span{
+            font-weight: 600;
+            background-color: #ddd;
+        }
+    }
+    .upcontent{
+        text-indent:2em;
+    }
+    .upcontenta,.upcontentr{
+        .img,.img1,.img2,.img3{
+            background-image: url('./img/addComponent.png');
+            width: 500px;
+            height: 192px;
+            background-size: 400px;
+            background-repeat: no-repeat;
+            margin-top: 15px; 
+        }
+        .img1{
+            background-image: url('./img/add2.png');
+        }
+        .img2{
+            background-image: url('./img/add3.jpg');
+        }
+        .img3{
+            background-image: url('./img/remove.png');
+        }
+    }
+
+}
