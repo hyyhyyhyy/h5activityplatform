@@ -7,6 +7,7 @@ import { HashRouter } from 'react-router-dom';
 import { Layout, Menu, Icon, Breadcrumb } from 'antd';
 import 'antd/dist/antd.css';
 
+
 // const { Layout, Menu, Icon } = antd;
 const SubMenu = Menu.SubMenu;
 import SearchBar from "../components/search/search"
@@ -23,6 +24,11 @@ class App extends React.Component {
 
     }
 
+    //跳转上传组件说明
+    gotoUpload() {
+        window.location.href = `http://${location.host}/#/uploadComponent`
+    }
+
     render() {
         return (
             <Layout style={{ padding: '24px 0', background: '#fff', minHeight: '100vh' }}>
@@ -31,7 +37,14 @@ class App extends React.Component {
                     <LeftMenu />
                 </Sider>
                 <Layout>
-                    <SearchBar />
+                    <section className='headerContanier'>
+                        <SearchBar />
+                        <div className='rightHeader'>
+                            <div className='goto'>首页</div>
+                            <div className='goto' onClick={this.gotoUpload()}>上传组件</div>
+                            <div className='goto'>github</div>
+                        </div>
+                    </section>
                     <Main />
                 </Layout>
             </Layout >

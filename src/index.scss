@@ -1,4 +1,12 @@
-.searchContanier{
-    position: relative;
-    
+.headerContanier{
+    display: flex;
+    justify-content: space-between;
+    .rightHeader{
+        display: flex;
+        width: 250px;
+        align-items: center;
+        justify-content: space-around;
+        margin-right: 250px;
+        font-size: 16px;
+    }
 }
