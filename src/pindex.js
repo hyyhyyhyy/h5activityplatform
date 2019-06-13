@@ -4,7 +4,7 @@ import RecordList from './business/recordList/index.jsx';
 import Loading from './common/loading/index.jsx';
 import Loadingnewpage from './common/loadingnewpage/index.jsx';
 
-export default {
+export {
     Broadcast,
     Lottery,
     RecordList,

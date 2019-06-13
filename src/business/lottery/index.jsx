@@ -33,7 +33,7 @@ class Lottery extends React.Component {
     init0() {
         this.setState({
             times: 0,
-            cycle: 8,
+            cycle: 3,
             speed: 100,
             count: 8,
             timer: 0,

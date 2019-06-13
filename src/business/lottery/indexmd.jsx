@@ -11,56 +11,37 @@ const initialSource = `
 
 \`\`\`js
 
-class pg extends React.Component {
-    render() {
-        return (
+import {Lottery} from 'ani_frag';
+
+class LotteryExample extends React.Component{
+
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            imgArr: [
+                require("../../img/1.png"),
+                require("../../img/10.png"),
+                require("../../img/20.png"),
+                require("../../img/100.png"),
+                require("../../img/click_btn.png"),
+                require("../../img/thanks.png"),
+                require("../../img/80.png"),
+                require("../../img/50.png"),
+                require("../../img/30.png")
+            ]
+        }
+    }
+
+    render(){
+        return(
             <div>
-                <div>这是一个分页</div>
-            </div>
+                <Lottery imgArr={this.state.imgArr} cycle={'3'} count={'8'} speed={'100'} prize={'5'}/>
+            </div>  
         )
     }
 }
 
-
-class pg extends React.Component {
-    render() {
-        return (
-            <div>
-                <div>这是一个分页</div>
-            </div>
-        )
-    }
-}
-
-class pg extends React.Component {
-    render() {
-        return (
-            <div>
-                <div>这是一个分页</div>
-            </div>
-        )
-    }
-}
-
-class pg extends React.Component {
-    render() {
-        return (
-            <div>
-                <div>这是一个分页</div>
-            </div>
-        )
-    }
-}
-
-class pg extends React.Component {
-    render() {
-        return (
-            <div>
-                <div>这是一个分页</div>
-            </div>
-        )
-    }
-}
 
 \`\`\`
 
@@ -85,7 +66,7 @@ class LotteryMD extends React.Component {
                         <Lottery />
                     </section>
                     <div className='codeContanier'>
-                        <h3>源码</h3>
+                        <h3>使用说明</h3>
                         <section className='code'>
                             <ReactMarkdown source={initialSource} />
                         </section>

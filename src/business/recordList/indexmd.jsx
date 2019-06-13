@@ -9,27 +9,31 @@ const initialSource = `
 
 \`\`\`js
 
-class pg extends React.Component {
-    render() {
-        return (
+import {RecordList} from 'ani_frag';
+
+class RecordlistExample extends React.Component{
+
+    constructor(props) {
+        super(props)
+
+        this.recordList = [
+            {
+                'mobile': '1505229**33',
+                'money': '100'
+            },
+            {
+                'mobile': '1345229**33',
+                'money': '30'
+            }
+            
+        ];
+    }
+
+    render(){
+        return(
             <div>
-            return (
-                <div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                </div>
-            )
-            </div>
+                <RecordList recordList={this.recordList}/>
+            </div>  
         )
     }
 }

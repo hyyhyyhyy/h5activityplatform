@@ -9,23 +9,32 @@ const initialSource = `
 
 \`\`\`js
 
-class pg extends React.Component {
-    render() {
-        return (
+import {Broadcast} from 'ani_frag';
+
+class BroadcastExample extends React.Component{
+
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            prizeBroadcastList: [
+                {
+                    'inviterName': '张先生',
+                    'score': '1000'
+                },
+                {
+                    'inviterName': '李先生',
+                    'score': '230'
+                }
+            ]
+        }
+    }
+
+    render(){
+        return(
             <div>
-                <div>这里是源码</div>
-                <div>这里是源码</div>
-                <div>这里是源码</div>
-                <div>这里是源码</div>
-                <div>这里是源码</div>
-                <div>这里是源码</div>
-                <div>这里是源码</div>
-                <div>这里是源码</div>
-                <div>这里是源码</div>
-                <div>这里是源码</div>
-                <div>这里是源码</div>
-                <div>这里是源码</div>
-            </div>
+                <Broadcast prizeBroadcastList={this.state.prizeBroadcastList}/>
+            </div>  
         )
     }
 }
@@ -53,7 +62,7 @@ class BroadcastMD extends React.Component {
                     <Broadcast />
                 </section>
                 <div className='codeContanier'>
-                    <h3>源码</h3>
+                    <h3>使用说明</h3>
                     <section className='code'>
                         <ReactMarkdown source={initialSource} />
                     </section>

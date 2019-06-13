@@ -56,7 +56,7 @@ class LoadingnewpageMD extends React.Component {
                     <Loadingnewpage />
                 </section>
                 <div className='codeContanier'>
-                    <h3>源码</h3>
+                    <h3>使用说明</h3>
                     <section className='code'>
                         <ReactMarkdown source={initialSource} />
                     </section>
