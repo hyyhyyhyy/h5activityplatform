@@ -9,27 +9,19 @@ const initialSource = `
 
 \`\`\`js
 
-class pg extends React.Component {
-    render() {
-        return (
+import {Loading} from 'ani_frag';
+
+class LoadingExample extends React.Component{
+
+    constructor(props) {
+        super(props)
+    }
+
+    render(){
+        return(
             <div>
-            return (
-                <div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                    <div>这里是源码</div>
-                </div>
-            )
-            </div>
+                <Loading/>
+            </div>  
         )
     }
 }
