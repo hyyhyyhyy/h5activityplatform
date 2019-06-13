@@ -1,17 +1,13 @@
 import React from 'react';
 import Lottery from './index';
-import Explain from '../../../components/explain/explain'
+import Explain from '../../../components/explain/explain';
+import { Icon } from 'antd';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 
 const ReactMarkdown = require('react-markdown')
 
-
-const initialSource = `
-
-
-\`\`\`js
-
-import {Lottery} from 'ani_frag';
+const code = `import {Lottery} from 'ani_frag';
 
 class LotteryExample extends React.Component{
 
@@ -40,19 +36,18 @@ class LotteryExample extends React.Component{
             </div>  
         )
     }
-}
+}`
 
+const initialSource = `
+
+
+\`\`\`js
+
+${code}
 
 \`\`\`
 
 `
-
-
-
-
-
-
-
 
 
 
@@ -69,14 +64,11 @@ class LotteryMD extends React.Component {
                         <h3>使用说明</h3>
                         <section className='code'>
                             <ReactMarkdown source={initialSource} />
+                            <CopyToClipboard text={code}>
+                                <Icon type="snippets" />
+                            </CopyToClipboard>
                         </section>
                     </div>
-
-
-                    {/* <section className='attributeContanier'>
-                        <ReactMarkdown source={initialSource1} />
-                    </section> */}
-
 
                 </div>
             </div>

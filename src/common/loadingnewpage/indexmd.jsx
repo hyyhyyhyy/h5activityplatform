@@ -1,15 +1,11 @@
 import React from 'react';
 import Loadingnewpage from './index';
-import Explain from '../../../components/explain/explain'
+import Explain from '../../../components/explain/explain';
+import { Icon } from 'antd';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 const ReactMarkdown = require('react-markdown')
 
-
-const initialSource = `
-
-
-\`\`\`js
-
-import {Loadingnewpage} from 'ani_frag';
+const code = `import {Loadingnewpage} from 'ani_frag';
 
 class LoadingnewpageExample extends React.Component{
 
@@ -24,19 +20,18 @@ class LoadingnewpageExample extends React.Component{
             </div>  
         )
     }
-}
+}`
+
+const initialSource = `
+
+
+\`\`\`js
+
+${code}
 
 \`\`\`
 
 `
-
-
-
-
-
-
-
-
 
 
 class LoadingnewpageMD extends React.Component {
@@ -51,6 +46,9 @@ class LoadingnewpageMD extends React.Component {
                     <h3>使用说明</h3>
                     <section className='code'>
                         <ReactMarkdown source={initialSource} />
+                        <CopyToClipboard text={code}>
+                            <Icon type="snippets" />
+                        </CopyToClipboard>
                     </section>
                 </div>
             </div>

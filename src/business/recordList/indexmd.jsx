@@ -1,15 +1,11 @@
 import React from 'react';
 import Recordlist from './index';
-import Explain from '../../../components/explain/explain'
+import Explain from '../../../components/explain/explain';
+import { Icon } from 'antd';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 const ReactMarkdown = require('react-markdown')
 
-
-const initialSource = `
-
-
-\`\`\`js
-
-import {RecordList} from 'ani_frag';
+const code = `import {RecordList} from 'ani_frag';
 
 class RecordlistExample extends React.Component{
 
@@ -36,19 +32,17 @@ class RecordlistExample extends React.Component{
             </div>  
         )
     }
-}
+}`
+
+const initialSource = `
+
+
+\`\`\`js
+${code}
 
 \`\`\`
 
 `
-
-
-
-
-
-
-
-
 
 
 class RecordlistMD extends React.Component {
@@ -124,6 +118,9 @@ class RecordlistMD extends React.Component {
                     <h3>源码</h3>
                     <section className='code'>
                         <ReactMarkdown source={initialSource} />
+                        <CopyToClipboard text={code}>
+                            <Icon type="snippets" />
+                        </CopyToClipboard>
                     </section>
                 </div>
             </div>

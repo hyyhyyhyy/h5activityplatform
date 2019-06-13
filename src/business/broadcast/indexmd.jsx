@@ -50,8 +50,6 @@ ${code}
 
 `
 
-
-
 class BroadcastMD extends React.Component {
     render() {
         return (
