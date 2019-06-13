@@ -1,15 +1,14 @@
 import React from 'react';
 import Broadcast from './index';
-import Explain from '../../../components/explain/explain'
+import Explain from '../../../components/explain/explain';
+import { Icon } from 'antd';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+
+
+
 const ReactMarkdown = require('react-markdown')
 
-
-const initialSource = `
-
-
-\`\`\`js
-
-import {Broadcast} from 'ani_frag';
+const code = `import {Broadcast} from 'ani_frag';
 
 class BroadcastExample extends React.Component{
 
@@ -37,19 +36,19 @@ class BroadcastExample extends React.Component{
             </div>  
         )
     }
-}
+}`
 
+
+const initialSource = `
+
+
+\`\`\`js
+
+${code}
 
 \`\`\`
 
 `
-
-
-
-
-
-
-
 
 
 
@@ -65,6 +64,9 @@ class BroadcastMD extends React.Component {
                     <h3>使用说明</h3>
                     <section className='code'>
                         <ReactMarkdown source={initialSource} />
+                        <CopyToClipboard text={code}>
+                            <Icon type="snippets" />
+                        </CopyToClipboard>
                     </section>
                 </div>
 
