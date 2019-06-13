@@ -3,6 +3,8 @@ import Loading from './index';
 import Explain from '../../../components/explain/explain';
 import { Icon } from 'antd';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import "./index.scss";
+
 const ReactMarkdown = require('react-markdown')
 
 const code = `import {Loading} from 'ani_frag';

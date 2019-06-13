@@ -3,6 +3,8 @@ import Lottery from './index';
 import Explain from '../../../components/explain/explain';
 import { Icon } from 'antd';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import "./index.scss";
+
 
 
 const ReactMarkdown = require('react-markdown')
