@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import LeftMenu from "./leftMenu";
 import Main from "./main";
 import "./index.scss";
-import { HashRouter } from 'react-router-dom';
+import { HashRouter, Link } from 'react-router-dom';
 import { Layout, Menu, Icon, Breadcrumb } from 'antd';
 import 'antd/dist/antd.css';
 
@@ -26,6 +26,7 @@ class App extends React.Component {
 
     //跳转上传组件说明
     gotoUpload() {
+        // location.href = "#/uploadComponent";
         // window.location.href = `http://${location.host}/#/uploadComponent`
     }
 
@@ -41,7 +42,8 @@ class App extends React.Component {
                         <SearchBar />
                         <div className='rightHeader'>
                             <div className='goto'>首页</div>
-                            <div className='goto' onClick={this.gotoUpload()}>上传组件</div>
+                            {/* <div className='goto' onClick={this.gotoUpload()}>上传组件</div> */}
+                            <Link to="/uploadComponent">上传组件</Link>
                             <div className='goto'>github</div>
                         </div>
                     </section>
