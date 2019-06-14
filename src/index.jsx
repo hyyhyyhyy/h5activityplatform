@@ -24,25 +24,17 @@ class App extends React.Component {
 
     }
 
-    //跳转上传组件说明
-    gotoUpload() {
-        // location.href = "#/uploadComponent";
-        // window.location.href = `http://${location.host}/#/uploadComponent`
-    }
-
     render() {
         return (
             <Layout style={{ padding: '24px 0', background: '#fff', minHeight: '100vh' }}>
                 <Sider width={300} style={{ background: '#fff' }} >
-                    {/* <div className="logo" /> */}
                     <LeftMenu />
                 </Sider>
                 <Layout>
                     <section className='headerContanier'>
                         <SearchBar />
                         <div className='rightHeader'>
-                            <div className='goto'>首页</div>
-                            {/* <div className='goto' onClick={this.gotoUpload()}>上传组件</div> */}
+                            <Link to="/home">首页</Link>
                             <Link to="/uploadComponent">上传组件</Link>
                             <div className='goto'>github</div>
                         </div>

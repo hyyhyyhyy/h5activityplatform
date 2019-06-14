@@ -36,7 +36,7 @@ class Main extends React.Component {
         return (
             <div>
                 <Content style={{ margin: '0 16px' }}>
-                    <Route exact path='/' component={Home} />
+                    <Route exact path='/home' component={Home} />
                     <Route exact path='/uploadComponent' component={UploadComponent} />
                     {this.getRoute(Config.business, 'business')}
                     {this.getRoute(Config.common, 'common')}
