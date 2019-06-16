@@ -5,9 +5,9 @@
   "main": "src/pindex.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "webpack&&node --max-old-space-size=8192",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server&&node --max-old-space-size=8192"
   },
   "browserslist": [
     "defaults",
@@ -42,6 +42,7 @@
   "dependencies": {
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "antd": "^3.18.1",
+    "cross-env": "^5.2.0",
     "react": "^16.8.3",
     "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.8.3",
