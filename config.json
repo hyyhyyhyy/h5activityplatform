@@ -38,5 +38,13 @@
       "className": "Loadingnewpage"
     }
   ],
-  "other": []
+  "other": [
+    {
+      "name": "loading",
+      "moduleNameChinese": "加载中",
+      "descr": "加载转动显示",
+      "author": "hyy",
+      "className": "Loading"
+    }
+  ]
 }
